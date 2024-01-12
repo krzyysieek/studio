@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(234, 233, 232);
+}
+
+.navbar {
+  height: 100px;
+  font-weight: bold;
+  background-color: white;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 1;
+}
+nav .nav-link {
+  color: rgb(242, 134, 0);
+}
+nav .nav-link:hover,
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link.active:hover {
+  color: black;
+  transition: 0.5s;
+}
+nav .navbar-nav .nav-link.active {
+  color: rgb(242, 134, 0);
+}
+nav .navbar-brand {
+  color: rgb(242, 134, 0);
+}
+nav .navbar-brand:hover {
+  color: black;
+  transition: 0.5s;
+}
+nav .navbar-toggler {
+  color: rgb(242, 134, 0);
+  padding: 10px 15px;
+}
+
+.img-logo {
+  width: 100px;
+}
+
+.underline-main {
+  position: sticky top-0;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(242, 134, 0);
+}
+
+main {
+  z-index: -6;
+}
+
+.aboutus {
+  height: 100vh;
+  background-color: white;
+}
+
+header.hero-img {
+  margin: auto;
+  margin-top: 55px;
+  padding: auto;
+  height: 60vh;
+  position: relative;
+  background-image: url(/img/logo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 0;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  background-color: rgba(252, 251, 250, 0.61);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+header.hero-img .hero-text {
+  font-family: "Pacifico", cursive;
+  display: flex;
+  font-size: 120px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  color: rgb(242, 134, 0);
+}
+header.hero-img .hero-text button.abt-us {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(242, 134, 0);
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.6);
+  transition: background-color, color, 0.6s;
+}
+header.hero-img .hero-text button.abt-us:hover {
+  color: white;
+  background-color: rgb(242, 134, 0);
+}
+
+@media (min-width: 992px) {
+  header.hero-img {
+    margin-top: 100px;
+    height: 120vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+h2 {
+  padding: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(242, 134, 0);
+}/*# sourceMappingURL=main.css.map */
