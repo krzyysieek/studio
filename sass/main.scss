@@ -9,7 +9,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 
-	background-color: rgb(234, 233, 232);
+	background-color: $bgc-color;
 }
 
 .navbar {
@@ -45,11 +45,13 @@ nav {
 	.navbar-toggler {
 		color: $first-color;
 		padding: 10px 15px;
+		z-index: 2;
 	}
 
 	.navbar-collapse {
 		background-color: white;
 		border-radius: 2px;
+		z-index: 0;
 	}
 
 	text-transform: uppercase;
@@ -58,33 +60,18 @@ nav {
 
 .img-logo {
 	width: 100px;
-	// height: 100%;
 }
 
-
-
-.underline-main {
-	position: sticky top-0;
-	margin: 0 auto;
-	width: 100%;
-	height: 4px;
-	background-color: $first-color;
-}
 
 main {
 	z-index: -6;
-}
-
-.aboutus {
-	height: 100vh;
-	background-color: $second-color;
 }
 
 header.hero-img {
 	top: 73px;
 	margin: auto;
 	height: 60vh;
-	background-image: url(studio/img/logo2.png);
+	background-image: url(/img/logo2.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:contain;
@@ -135,6 +122,37 @@ header.hero-img {
 	
 }
   
+}
+
+.underline {
+	position: sticky top-0;
+	margin: 0 auto;
+	width: 50%;
+	height: 4px;
+	background-color: $first-color;
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $first-color;
+	margin: auto;
+}
+
+.aboutus {
+	position: relative;
+	height: 100vh;
+	background-color: $bgc-color;
+	margin-top: 90px;
+
+	p {
+		position: relative;
+		font-size: 15px;
+		margin: 20px;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 
