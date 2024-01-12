@@ -71,7 +71,7 @@ header.hero-img {
   top: 73px;
   margin: auto;
   height: 60vh;
-  background-image: url(/img/logo2.png);
+  background-image: url(studio/img/logo2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -100,7 +100,7 @@ header.hero-img .hero-text {
 }
 header.hero-img .hero-text button.abt-us {
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 15px;
   padding: 10px;
   color: rgb(242, 134, 0);
   border-radius: 10px;
@@ -112,7 +112,7 @@ header.hero-img .hero-text button.abt-us:hover {
   background-color: rgb(242, 134, 0);
 }
 header.hero-img .hero-text h1 {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
