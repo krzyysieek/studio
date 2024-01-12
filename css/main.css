@@ -10,7 +10,6 @@ body {
 }
 
 .navbar {
-  height: 100px;
   font-weight: bold;
   background-color: white;
 }
@@ -42,6 +41,10 @@ nav .navbar-toggler {
   color: rgb(242, 134, 0);
   padding: 10px 15px;
 }
+nav .navbar-collapse {
+  background-color: white;
+  border-radius: 2px;
+}
 
 .img-logo {
   width: 100px;
@@ -65,11 +68,9 @@ main {
 }
 
 header.hero-img {
+  top: 73px;
   margin: auto;
-  margin-top: 55px;
-  padding: auto;
   height: 60vh;
-  position: relative;
   background-image: url(/img/logo2.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -87,19 +88,19 @@ header.hero-img .hero-shadow {
   z-index: -3;
 }
 header.hero-img .hero-text {
+  position: relative;
   font-family: "Pacifico", cursive;
   display: flex;
-  font-size: 120px;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50%;
+  height: 100%;
   color: rgb(242, 134, 0);
 }
 header.hero-img .hero-text button.abt-us {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 10px;
   padding: 10px;
   color: rgb(242, 134, 0);
   border-radius: 10px;
@@ -110,22 +111,39 @@ header.hero-img .hero-text button.abt-us:hover {
   color: white;
   background-color: rgb(242, 134, 0);
 }
+header.hero-img .hero-text h1 {
+  font-size: 10px;
+}
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header.hero-img {
-    margin-top: 100px;
-    height: 120vh;
+    height: 100vh;
+    top: 20px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+  header.hero-img .hero-text h1 {
+    font-size: 30px;
+  }
+  header.hero-img .hero-text button.abt-us {
+    font-size: 20px;
+  }
 }
-h2 {
-  padding: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgb(242, 134, 0);
+@media (min-width: 576px) {
+  header.hero-img {
+    top: 70px;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  header.hero-img .hero-text h1 {
+    font-size: 30px;
+  }
+  header.hero-img .hero-text button.abt-us {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
