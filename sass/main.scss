@@ -102,7 +102,7 @@ header.hero-img {
 	
 	button.abt-us {
 		margin-top: 20px;
-		font-size: 15px;
+		font-size: 17px;
 		padding: 10px;
 		color: $first-color;
 		border-radius: 10px;
@@ -116,7 +116,7 @@ header.hero-img {
 	}
 
 	h1 {
-		font-size: 20px;
+		font-size: 23px;
 	}
 
 	
@@ -144,14 +144,54 @@ header.hero-img {
 	position: relative;
 	height: 100vh;
 	background-color: $bgc-color;
-	margin-top: 90px;
+	margin-top: 100px;
 
 	p {
-		position: relative;
-		font-size: 15px;
+		// position: relative;
+		font-size: 20px;
 		margin: 20px;
-		justify-content: center;
-		align-items: center;
+		// justify-content: center;
+		// align-items: center;
+	}
+}
+
+.team {
+
+	height: 100vh;
+	margin-top: 50px;
+	position: relative;
+	margin-right: 50px;
+	
+	// z-index: 0;
+	
+	.card-group {
+		margin: 20px;
+		width: 100%;
+	}
+
+
+	.card {
+		background-color: $first-color;
+		transition: scale 0.3s;
+		color: white;
+		font-style: italic;
+		border-radius: 5px;
+		// font-family: 'Pacifico', cursive;
+
+		.card-body {
+			height: 60px;
+		}
+	}
+
+	.card:hover {
+		scale: 0.96;
+	}
+
+	.card-title {
+		margin-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
@@ -182,9 +222,22 @@ header.hero-img {
 
 		
 	}
+
+	.aboutus {
+	
+		p {
+			// position: relative;
+			font-size: 17px;
+			margin: 30px;
+			// justify-content: ;
+			// align-items: flex-end;
+		}
+	}
 	
 
 }
+
+
 
 @media (min-width: 576px) {
 	header.hero-img {
