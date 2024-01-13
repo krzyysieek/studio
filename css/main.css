@@ -132,32 +132,33 @@ header.hero-img .hero-text h1 {
 }
 
 .team {
-  height: 100vh;
   margin-top: 50px;
   position: relative;
-  margin-right: 50px;
-}
-.team .card-group {
-  margin: 20px;
-  width: 100%;
 }
 .team .card {
+  margin: 20px;
+  width: 90%;
   background-color: rgb(242, 134, 0);
   transition: scale 0.3s;
   color: white;
   font-style: italic;
   border-radius: 5px;
 }
-.team .card .card-body {
-  height: 60px;
+.team .card .card-img-top {
+  height: 40vh;
 }
-.team .card:hover {
+.team .card .card-img-top .card-body {
+  height: 20px;
+}
+.team .card .card:hover {
   scale: 0.96;
 }
-.team .card-title {
-  margin-bottom: 20px;
+.team .card .card-title {
   text-align: center;
-  text-transform: uppercase;
+  font-weight: bold;
+}
+.team .card .card-text {
+  text-align: center;
   font-weight: bold;
 }
 
@@ -179,6 +180,25 @@ header.hero-img .hero-text h1 {
   .aboutus p {
     font-size: 17px;
     margin: 30px;
+  }
+  .team {
+    height: 100vh;
+    margin-top: 50px;
+    position: relative;
+  }
+  .team .card {
+    width: 60%;
+    background-color: rgb(242, 134, 0);
+    transition: scale 0.3s;
+    color: white;
+  }
+  .team .card .card-img-top {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .card .card-img-top .card-body {
+    height: 120px;
   }
 }
 @media (min-width: 576px) {

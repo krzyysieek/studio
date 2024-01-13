@@ -155,31 +155,27 @@ header.hero-img {
 	}
 }
 
+
 .team {
 
-	height: 100vh;
 	margin-top: 50px;
 	position: relative;
-	margin-right: 50px;
-	
-	// z-index: 0;
-	
-	.card-group {
-		margin: 20px;
-		width: 100%;
-	}
 
 
 	.card {
+		margin: 20px;
+		width: 90%;
 		background-color: $first-color;
 		transition: scale 0.3s;
 		color: white;
 		font-style: italic;
 		border-radius: 5px;
-		// font-family: 'Pacifico', cursive;
 
+		.card-img-top {
+			height: 40vh;
+		
 		.card-body {
-			height: 60px;
+			height: 20px;
 		}
 	}
 
@@ -188,13 +184,16 @@ header.hero-img {
 	}
 
 	.card-title {
-		margin-bottom: 20px;
 		text-align: center;
-		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.card-text {
+		text-align: center;
 		font-weight: bold;
 	}
 }
-
+}
 
 
 
@@ -222,6 +221,7 @@ header.hero-img {
 
 		
 	}
+	
 
 	.aboutus {
 	
@@ -233,8 +233,30 @@ header.hero-img {
 			// align-items: flex-end;
 		}
 	}
-	
 
+	.team {
+
+		height: 100vh;
+		margin-top: 50px;
+		position: relative;
+	
+	
+		.card {
+			width: 60%;
+			background-color: $first-color;
+			transition: scale 0.3s;
+			color: white;
+	
+			.card-img-top {
+				height: 50vh;
+				object-fit: cover;
+	
+			.card-body {
+				height: 120px;
+			}
+		}
+	}
+}
 }
 
 
@@ -265,6 +287,3 @@ header.hero-img {
 	
 
 }
-
-
-
