@@ -234,29 +234,7 @@ header.hero-img {
 		}
 	}
 
-	.team {
-
-		height: 100vh;
-		margin-top: 50px;
-		position: relative;
 	
-	
-		.card {
-			width: 60%;
-			background-color: $first-color;
-			transition: scale 0.3s;
-			color: white;
-	
-			.card-img-top {
-				height: 50vh;
-				object-fit: cover;
-	
-			.card-body {
-				height: 120px;
-			}
-		}
-	}
-}
 }
 
 
@@ -285,5 +263,27 @@ header.hero-img {
 		
 	}
 	
+.team {
 
+		height: 100vh;
+		margin-top: 50px;
+		position: relative;
+	
+	
+		.card {
+			width: 60%;
+			background-color: $first-color;
+			transition: scale 0.3s;
+			color: white;
+	
+			.card-img-top {
+				height: 50vh;
+				object-fit: cover;
+	
+			.card-body {
+				height: 120px;
+			}
+		}
+	}
+}
 }

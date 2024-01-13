@@ -181,6 +181,22 @@ header.hero-img .hero-text h1 {
     font-size: 17px;
     margin: 30px;
   }
+}
+@media (min-width: 576px) {
+  header.hero-img {
+    top: 70px;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  header.hero-img .hero-text h1 {
+    font-size: 30px;
+  }
+  header.hero-img .hero-text button.abt-us {
+    font-size: 20px;
+  }
   .team {
     height: 100vh;
     margin-top: 50px;
@@ -199,21 +215,5 @@ header.hero-img .hero-text h1 {
   }
   .team .card .card-img-top .card-body {
     height: 120px;
-  }
-}
-@media (min-width: 576px) {
-  header.hero-img {
-    top: 70px;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  header.hero-img .hero-text h1 {
-    font-size: 30px;
-  }
-  header.hero-img .hero-text button.abt-us {
-    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
