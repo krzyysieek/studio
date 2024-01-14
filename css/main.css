@@ -57,10 +57,10 @@ main {
 }
 
 header.hero-img {
-  top: 73px;
+  top: 60px;
   margin: auto;
   height: 60vh;
-  background-image: url(/img/logo2.png);
+  background-image: url("../img/logo2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -124,7 +124,7 @@ header.hero-img .hero-text h1 {
   position: relative;
   height: 100vh;
   background-color: rgba(252, 251, 250, 0.61);
-  margin-top: 100px;
+  margin-top: 130px;
 }
 .aboutus p {
   font-size: 20px;
@@ -132,40 +132,80 @@ header.hero-img .hero-text h1 {
 }
 
 .team {
-  margin-top: 50px;
-  position: relative;
+  margin-top: 60px;
 }
 .team .card {
-  margin: 20px;
-  width: 90%;
-  background-color: rgb(242, 134, 0);
+  width: auto;
+  margin-top: 30px;
+  height: auto;
   transition: scale 0.3s;
   color: white;
   font-style: italic;
   border-radius: 5px;
 }
 .team .card .card-img-top {
-  height: 40vh;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.team .card .card-img-top .card-body {
-  height: 20px;
+.team .card .card-body {
+  background-color: rgb(242, 134, 0);
+  padding: 0px;
+  height: 35px;
 }
 .team .card .card:hover {
   scale: 0.96;
 }
-.team .card .card-title {
+.team .card .card-title, .team .card .card-text {
+  margin: 5px;
+  padding: 0;
   text-align: center;
   font-weight: bold;
-}
-.team .card .card-text {
-  text-align: center;
-  font-weight: bold;
+  font-size: 8px;
 }
 
+.works {
+  margin-top: 60px;
+}
+.works .works-image {
+  margin-top: 30px;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  header.hero-img {
+    top: 10px;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  header.hero-img .hero-text h1 {
+    font-size: 30px;
+  }
+  header.hero-img .hero-text button.abt-us {
+    font-size: 20px;
+  }
+  .team .card .card-img-top {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .card .card-body {
+    height: 60px;
+  }
+  .team .card .card-body .card-title, .team .card .card-body .card-text {
+    margin: 8px;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
 @media (min-width: 768px) {
   header.hero-img {
+    top: 90px;
     height: 100vh;
-    top: 20px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,39 +221,18 @@ header.hero-img .hero-text h1 {
     font-size: 17px;
     margin: 30px;
   }
-}
-@media (min-width: 576px) {
-  header.hero-img {
-    top: 70px;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  header.hero-img .hero-text h1 {
-    font-size: 30px;
-  }
-  header.hero-img .hero-text button.abt-us {
-    font-size: 20px;
-  }
-  .team {
-    height: 100vh;
-    margin-top: 50px;
-    position: relative;
-  }
-  .team .card {
-    width: 60%;
-    background-color: rgb(242, 134, 0);
-    transition: scale 0.3s;
-    color: white;
-  }
   .team .card .card-img-top {
-    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .team .card .card-img-top .card-body {
+  .team .card .card-body {
     height: 120px;
+  }
+  .team .card .card-body .card-title, .team .card .card-body .card-text {
+    margin: 8px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

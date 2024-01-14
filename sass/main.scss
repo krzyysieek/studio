@@ -68,13 +68,13 @@ main {
 }
 
 header.hero-img {
-	top: 73px;
+	top: 60px;
 	margin: auto;
 	height: 60vh;
-	background-image: url(/img/logo2.png);
+	background-image: url("../img/logo2.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size:contain;
+	background-size: contain;
 	position: relative;
 	z-index: 0;
 
@@ -144,64 +144,117 @@ header.hero-img {
 	position: relative;
 	height: 100vh;
 	background-color: $bgc-color;
-	margin-top: 100px;
+	margin-top: 130px;
 
 	p {
-		// position: relative;
 		font-size: 20px;
 		margin: 20px;
-		// justify-content: center;
-		// align-items: center;
 	}
 }
 
 
 .team {
 
-	margin-top: 50px;
-	position: relative;
+	margin-top: 60px;
 
 
 	.card {
-		margin: 20px;
-		width: 90%;
-		background-color: $first-color;
+		width: auto;
+		margin-top: 30px;
+		height: auto;
 		transition: scale 0.3s;
 		color: white;
 		font-style: italic;
 		border-radius: 5px;
 
 		.card-img-top {
-			height: 40vh;
-		
-		.card-body {
-			height: 20px;
+			height: auto;
+			object-fit: cover;
 		}
-	}
+
+		.card-body {
+			background-color: $first-color;
+			padding: 0px;
+			height: 35px;
+		}
+	
 
 	.card:hover {
 		scale: 0.96;
 	}
 
-	.card-title {
+	.card-title, .card-text {
+		margin: 5px;
+		padding: 0;
 		text-align: center;
 		font-weight: bold;
+		font-size: 8px;
 	}
 
-	.card-text {
-		text-align: center;
-		font-weight: bold;
-	}
 }
 }
 
+.works {
+	margin-top: 60px;
 
+	.works-image {
+		margin-top: 30px;
+		height: auto;
+	}
+}
+
+
+@media (min-width: 576px) {
+	header.hero-img {
+		top: 10px;
+		height: 100vh;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		.hero-text {
+
+			h1{
+				font-size: 30px;
+			}
+			
+
+			button.abt-us {
+				font-size: 20px;
+			}
+		}
+		
+		
+	}
+	
+.team {
+	
+		.card {
+	
+			.card-img-top {
+				object-fit: cover;
+			}
+			.card-body {
+				height: 60px;
+
+				.card-title, .card-text {
+					margin: 8px;
+					padding: 0;
+					text-align: center;
+					font-weight: bold;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
 
 
 @media (min-width: 768px) {
 	header.hero-img {
+		top: 90px;
 		height: 100vh;
-		top: 20px;
 		width: 100%;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -226,64 +279,29 @@ header.hero-img {
 	.aboutus {
 	
 		p {
-			// position: relative;
 			font-size: 17px;
 			margin: 30px;
-			// justify-content: ;
-			// align-items: flex-end;
 		}
 	}
 
-	
-}
-
-
-
-@media (min-width: 576px) {
-	header.hero-img {
-		top: 70px;
-		height: 100vh;
-		width: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-
-		.hero-text {
-
-			h1{
-				font-size: 30px;
-			}
-			
-
-			button.abt-us {
-				font-size: 20px;
-			}
-		}
-
-		
-	}
-	
-.team {
-
-		height: 100vh;
-		margin-top: 50px;
-		position: relative;
-	
+	.team {
 	
 		.card {
-			width: 60%;
-			background-color: $first-color;
-			transition: scale 0.3s;
-			color: white;
 	
 			.card-img-top {
-				height: 50vh;
 				object-fit: cover;
-	
+			}
 			.card-body {
 				height: 120px;
+
+				.card-title, .card-text {
+					margin: 8px;
+					padding: 5px;
+					text-align: center;
+					font-weight: bold;
+					font-size: 25px;
+				}
 			}
 		}
 	}
-}
 }
