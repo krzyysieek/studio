@@ -137,7 +137,6 @@ header.hero-img {
 
 .aboutus {
 	position: relative;
-	height: 100vh;
 	background-color: $bgc-color;
 	margin-top: 130px;
 
@@ -197,17 +196,49 @@ header.hero-img {
 	}
 
 	h4 {
+		margin-bottom: 20px;
 		text-transform: uppercase;
 		justify-content: center;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
+
+	p {
+		font-size: 12px;
+	}
+}
+
+.prices {
+	margin-top: 60px;
+
+	h3 {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		justify-content: center;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	h4 {
+		margin-top: 20px;
+		text-transform: uppercase;
+		justify-content: center;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
 }
 
 .contact {
-	margin-top: 20px;
-	margin-bottom: 60px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 	
 
 	.contact-us {
@@ -215,9 +246,7 @@ header.hero-img {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 20px;
-		width: 100%;
-		background-color: orange;
+		margin-top: 60px;
 
 		h3 {
 			margin-bottom: 0;
@@ -241,6 +270,12 @@ header.hero-img {
 		}
 	}
 }
+
+footer {
+	background-color: $first-color;
+}
+
+
 
 @media (min-width: 576px) {
 	header.hero-img {
@@ -284,7 +319,6 @@ header.hero-img {
 
 	.contact {
 		margin-top: 60px;
-		margin-bottom: 60px;
 
 		.contact-us {
 			margin-top: 20px;
@@ -315,25 +349,7 @@ header.hero-img {
 
 	}
 
-	.works {
-		margin-top: 60px;
 	
-		h3 {
-			margin-top: 40px;
-			justify-content: center;
-			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-	
-		h4 {
-			text-transform: uppercase;
-			justify-content: center;
-			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-	}
 }
 
 @media (min-width: 768px) {
@@ -384,8 +400,8 @@ header.hero-img {
 	}
 
 	.contact {
-		margin-top: 60px;
-		margin-bottom: 60px;
+		margin-top: 80px;
+		margin-bottom: 20px;
 		
 
 		.contact-us {
@@ -405,22 +421,9 @@ header.hero-img {
 	}
 
 	.works {
-		margin-top: 60px;
-	
-		h3 {
-			margin-top: 40px;
-			justify-content: center;
-			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-	
-		h4 {
-			text-transform: uppercase;
-			justify-content: center;
-			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
+
+		p {
+			font-size: 13px;
 		}
 	}
 }
