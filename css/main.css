@@ -57,7 +57,7 @@ main {
 }
 
 header.hero-img {
-  top: 60px;
+  top: 80px;
   margin: auto;
   height: 60vh;
   background-image: url("../img/logo2.png");
@@ -136,7 +136,7 @@ header.hero-img .hero-text h1 {
 }
 .team .card {
   width: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   height: auto;
   transition: scale 0.3s;
   color: white;
@@ -156,7 +156,8 @@ header.hero-img .hero-text h1 {
 .team .card .card:hover {
   scale: 0.96;
 }
-.team .card .card-title, .team .card .card-text {
+.team .card .card-title,
+.team .card .card-text {
   margin: 5px;
   padding: 0;
   text-align: center;
@@ -167,9 +168,50 @@ header.hero-img .hero-text h1 {
 .works {
   margin-top: 60px;
 }
-.works .works-image {
-  margin-top: 30px;
-  height: auto;
+.works h3 {
+  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.works h4 {
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.contact .contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: orange;
+}
+.contact .contact-us h3 {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.contact .contact-us .contact-item {
+  margin: 3px;
+  font-size: 13px;
+}
+.contact .contact-us a {
+  text-decoration: none;
+  color: black;
+  transition: font-weight 0.5s;
+}
+.contact .contact-us a:hover {
+  font-weight: bold;
 }
 
 @media (min-width: 576px) {
@@ -194,12 +236,56 @@ header.hero-img .hero-text h1 {
   .team .card .card-body {
     height: 60px;
   }
-  .team .card .card-body .card-title, .team .card .card-body .card-text {
+  .team .card .card-body .card-title,
+  .team .card .card-body .card-text {
     margin: 8px;
     padding: 0;
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+  }
+  .contact {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact .contact-us {
+    margin-top: 20px;
+    margin-top: 20px;
+  }
+  .contact .contact-us h3 {
+    margin: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .contact .contact-us .contact-item {
+    margin: 2px;
+    font-size: 15px;
+  }
+  .contact .contact-us a {
+    margin: 2px;
+    text-decoration: none;
+    color: black;
+    transition: font-weight 0.5s;
+  }
+  .contact .contact-us a:hover {
+    font-weight: bold;
+  }
+  .works {
+    margin-top: 60px;
+  }
+  .works h3 {
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .works h4 {
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 @media (min-width: 768px) {
@@ -228,11 +314,43 @@ header.hero-img .hero-text h1 {
   .team .card .card-body {
     height: 120px;
   }
-  .team .card .card-body .card-title, .team .card .card-body .card-text {
+  .team .card .card-body .card-title,
+  .team .card .card-body .card-text {
     margin: 8px;
     padding: 5px;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+  }
+  .contact {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact .contact-us h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .contact .contact-us .contact-item {
+    margin: 8px;
+    font-size: 18px;
+  }
+  .works {
+    margin-top: 60px;
+  }
+  .works h3 {
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .works h4 {
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=main.css.map */
