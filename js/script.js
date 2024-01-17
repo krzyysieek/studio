@@ -1,23 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-	const nav = document.querySelector('.navbar')
-	const allNavItems = document.querySelectorAll('.nav-link')
-	const navList = document.querySelector('.navbar-collapse')
+const navItems = document.querySelectorAll('.nav-link')
+const navArea = document.querySelector('.navbar-collapse')
+const navBar = document.querySelector('.navbar-toggler')
 
-	function addShadow() {
-		if (window.scrollY >= 100) {
-			nav.classList.add('shadow-bg')
-		} else {
-			nav.classList.remove('shadow-bg')
-		}
-	}
 
-	allNavItems.forEach(item =>
-		item.addEventListener('click', () => {
-			navList.classList.remove('show')
-		})
-	)
 
-	
+const closeNav = () => {
+    navArea.classList.remove('show')
+    navBar.classList.add('collapsed')
+}
 
-	window.addEventListener('scroll', addShadow)
-})
+
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', closeNav);
+  });

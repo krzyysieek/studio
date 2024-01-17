@@ -6,10 +6,18 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 
 	background-color: $bgc-color;
+}
+
+section {
+	scroll-margin-top: 74px;
 }
 
 .navbar {
@@ -49,6 +57,7 @@ nav {
 	}
 
 	.navbar-collapse {
+		display: inline;
 		background-color: white;
 		border-radius: 2px;
 		z-index: 0;
@@ -98,7 +107,8 @@ header.hero-img {
 		height: 100%;
 		color: $first-color;
 
-		button.abt-us {
+		button.abt-us, a {
+			text-decoration: none;
 			margin-top: 20px;
 			font-size: 17px;
 			padding: 10px;
@@ -109,8 +119,12 @@ header.hero-img {
 		}
 
 		button.abt-us:hover {
-			color: white;
+			
 			background-color: $first-color;
+		}
+
+		a:hover {
+			color: white;
 		}
 
 		h1 {
@@ -136,9 +150,9 @@ header.hero-img {
 }
 
 .aboutus {
-	position: relative;
+	// position: relative;
 	background-color: $bgc-color;
-	margin-top: 130px;
+	margin-top: 180px;
 
 	p {
 		font-size: 20px;
@@ -187,6 +201,10 @@ header.hero-img {
 .works {
 	margin-top: 60px;
 
+	.first-work-title {
+		margin-top: 20px;
+	}
+
 	h3 {
 		margin-top: 40px;
 		justify-content: center;
@@ -207,10 +225,15 @@ header.hero-img {
 	p {
 		font-size: 12px;
 	}
+
 }
 
 .prices {
 	margin-top: 60px;
+
+	.first-price-title {
+		margin-top: 20px;
+	}
 
 	h3 {
 		margin-top: 40px;
@@ -233,13 +256,11 @@ header.hero-img {
 	p {
 		font-size: 12px;
 	}
-
 }
 
 .contact {
 	margin-top: 60px;
 	margin-bottom: 20px;
-	
 
 	.contact-us {
 		display: flex;
@@ -272,10 +293,17 @@ header.hero-img {
 }
 
 footer {
+	height: 35px;
+	font-size: 12px;
+	justify-content: center;
+	text-align: center;
 	background-color: $first-color;
 }
 
-
+// .cookie-box {
+// 	height: 200px;
+// 	width: 100%;
+// }
 
 @media (min-width: 576px) {
 	header.hero-img {
@@ -296,7 +324,9 @@ footer {
 			}
 		}
 	}
-
+	.aboutus {
+		margin-top: 100px;
+	}
 	.team {
 		.card {
 			.card-img-top {
@@ -346,16 +376,24 @@ footer {
 				font-weight: bold;
 			}
 		}
-
 	}
 
-	
+	footer {
+		height: 40px;
+		padding-top: 5px;
+		font-size: 15px;
+	}
 }
 
 @media (min-width: 768px) {
+
+	section {
+		scroll-margin-top: 72px;
+	}
+
 	header.hero-img {
 		top: 90px;
-		height: 100vh;
+		// height: 100vh;
 		width: 100%;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -373,9 +411,10 @@ footer {
 	}
 
 	.aboutus {
+		margin-top: 150px;
+
 		p {
 			font-size: 17px;
-			margin: 30px;
 		}
 	}
 
@@ -402,10 +441,8 @@ footer {
 	.contact {
 		margin-top: 80px;
 		margin-bottom: 20px;
-		
 
 		.contact-us {
-
 			h3 {
 				margin: 0;
 				margin-bottom: 8px;
@@ -421,7 +458,6 @@ footer {
 	}
 
 	.works {
-
 		p {
 			font-size: 13px;
 		}
