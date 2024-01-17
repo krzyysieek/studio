@@ -107,7 +107,8 @@ header.hero-img {
 		height: 100%;
 		color: $first-color;
 
-		button.abt-us, a {
+		button.abt-us,
+		a {
 			text-decoration: none;
 			margin-top: 20px;
 			font-size: 17px;
@@ -119,7 +120,6 @@ header.hero-img {
 		}
 
 		button.abt-us:hover {
-			
 			background-color: $first-color;
 		}
 
@@ -169,7 +169,7 @@ header.hero-img {
 		height: auto;
 		transition: scale 0.3s;
 		color: white;
-		font-style: italic;
+		// font-style: italic;
 		border-radius: 5px;
 
 		.card-img-top {
@@ -225,7 +225,6 @@ header.hero-img {
 	p {
 		font-size: 12px;
 	}
-
 }
 
 .prices {
@@ -293,17 +292,84 @@ header.hero-img {
 }
 
 footer {
+	position: relative;
 	height: 35px;
 	font-size: 12px;
 	justify-content: center;
 	text-align: center;
 	background-color: $first-color;
+
+	.prv-link {
+		margin-top: 3px;
+		font-size: 12px;
+		position: absolute;
+		right: 60px;
+		text-decoration: none;
+		color: white;
+		transition: color font-weight, 0.5s;
+	}
+
+	.prv-link:hover {
+		color: black;
+		font-weight: bold;
+	}
 }
 
-// .cookie-box {
-// 	height: 200px;
-// 	width: 100%;
-// }
+.cookies-box {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	background-color: $first-color;
+	justify-content: center;
+	text-align: center;
+
+	.cookies-text {
+		font-size: 12px;
+		margin: 5px;
+
+		a {
+			color: black;
+		}
+	}
+
+	button {
+		background-color: rgba(128, 128, 128, 0.573);
+		width: 150px;
+		height: 28px;
+		margin: 20px;
+		margin-top: 10px;
+		font-size: 13px;
+	}
+
+	.info-btn {
+		transition: background-color, 0.5s;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	.info-btn:hover {
+		background-color: rgb(255, 98, 0);
+	}
+
+	.accept-btn {
+		transition: background-color, 0.5s;
+		height: 45px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+
+	.accept-btn:hover {
+		background-color: rgb(255, 98, 0);
+	}
+}
+
+.cookies-box.show{
+	display: inline;
+}
+
 
 @media (min-width: 576px) {
 	header.hero-img {
@@ -386,7 +452,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
 	section {
 		scroll-margin-top: 72px;
 	}

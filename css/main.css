@@ -96,7 +96,8 @@ header.hero-img .hero-text {
   height: 100%;
   color: rgb(242, 134, 0);
 }
-header.hero-img .hero-text button.abt-us, header.hero-img .hero-text a {
+header.hero-img .hero-text button.abt-us,
+header.hero-img .hero-text a {
   text-decoration: none;
   margin-top: 20px;
   font-size: 17px;
@@ -150,7 +151,6 @@ header.hero-img .hero-text h1 {
   height: auto;
   transition: scale 0.3s;
   color: white;
-  font-style: italic;
   border-radius: 5px;
 }
 .team .card .card-img-top {
@@ -256,11 +256,73 @@ header.hero-img .hero-text h1 {
 }
 
 footer {
+  position: relative;
   height: 35px;
   font-size: 12px;
   justify-content: center;
   text-align: center;
   background-color: rgb(242, 134, 0);
+}
+footer .prv-link {
+  margin-top: 3px;
+  font-size: 12px;
+  position: absolute;
+  right: 60px;
+  text-decoration: none;
+  color: white;
+  transition: color font-weight, 0.5s;
+}
+footer .prv-link:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.cookies-box {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  background-color: rgb(242, 134, 0);
+  justify-content: center;
+  text-align: center;
+}
+.cookies-box .cookies-text {
+  font-size: 12px;
+  margin: 5px;
+}
+.cookies-box .cookies-text a {
+  color: black;
+}
+.cookies-box button {
+  background-color: rgba(128, 128, 128, 0.573);
+  width: 150px;
+  height: 28px;
+  margin: 20px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.cookies-box .info-btn {
+  transition: background-color, 0.5s;
+}
+.cookies-box .info-btn a {
+  text-decoration: none;
+  color: black;
+}
+.cookies-box .info-btn:hover {
+  background-color: rgb(255, 98, 0);
+}
+.cookies-box .accept-btn {
+  transition: background-color, 0.5s;
+  height: 45px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.cookies-box .accept-btn:hover {
+  background-color: rgb(255, 98, 0);
+}
+
+.cookies-box.show {
+  display: inline;
 }
 
 @media (min-width: 576px) {
