@@ -71,10 +71,6 @@ nav {
 	width: 100px;
 }
 
-main {
-	z-index: -6;
-}
-
 header.hero-img {
 	top: 80px;
 	margin: auto;
@@ -291,28 +287,33 @@ header.hero-img {
 	}
 }
 
+.pprv {
+	margin: 20px;
+	text-align: center;
+	justify-content: center;
+.prv-link {
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+	transition: font-weight, 0.5s;
+}
+
+.prv-link:hover {
+	font-weight: bold;
+}
+
+}
+
 footer {
 	position: relative;
-	height: 35px;
+	display: flex;
+	height: 65px;
 	font-size: 12px;
 	justify-content: center;
 	text-align: center;
 	background-color: $first-color;
 
-	.prv-link {
-		margin-top: 3px;
-		font-size: 12px;
-		position: absolute;
-		right: 60px;
-		text-decoration: none;
-		color: white;
-		transition: color font-weight, 0.5s;
-	}
 
-	.prv-link:hover {
-		color: black;
-		font-weight: bold;
-	}
 }
 
 .cookies-box {
@@ -368,6 +369,97 @@ footer {
 
 .cookies-box.show{
 	display: inline;
+}
+
+//privacy//
+
+.title-privacy {
+	margin-top: 10px;
+	justify-content: center;
+	text-align: center;
+
+	p {
+		text-transform: uppercase;
+		color: $first-color;
+		font-weight: bold;
+	}
+
+	a {
+		font-size: 20px;
+		text-decoration: none;
+		color: $first-color;
+	}
+}
+
+
+
+.privacy {
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+
+	h2,
+	h3 {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 40px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	h4 {
+		margin-top: 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	table {
+		font-size: 7px;
+	}
+	li {
+		margin-top: 0;
+	}
+
+	.item-pv {
+		margin-bottom: 0;
+	}
+
+	.laws {
+		li {
+			justify-content: start;
+			text-align: start;
+		}
+	}
+
+	.back-home {
+		border-color: black;
+		height: 40px;
+		width: 180px;
+        font-size: 12px;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		transition: color, 0.5s;
+		background-color: white;
+
+		a {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+	}
+
+    .back-home:hover {
+        background-color: rgba(239, 235, 235, 0.748);
+    
+        a {
+            color: $first-color;
+        }
+    }
 }
 
 
@@ -449,6 +541,28 @@ footer {
 		padding-top: 5px;
 		font-size: 15px;
 	}
+
+	.privacy {
+		font-size: 15px;
+
+		.table {
+			font-size: 14px;
+		}
+
+		h3 {
+			font-size: 22px;
+		}
+
+		h4 {
+			font-size: 20px;
+		}
+
+		.back-home {
+            font-size: 15px;
+			height: 50px;
+			width: 210px;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -525,6 +639,22 @@ footer {
 	.works {
 		p {
 			font-size: 13px;
+		}
+	}
+
+	.privacy {
+		font-size: 16px;
+
+		.table {
+			font-size: 15px;
+		}
+
+		h3 {
+			font-size: 23px;
+		}
+
+		h4 {
+			font-size: 11px;
 		}
 	}
 }

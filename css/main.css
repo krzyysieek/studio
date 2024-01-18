@@ -61,10 +61,6 @@ nav .navbar-collapse {
   width: 100px;
 }
 
-main {
-  z-index: -6;
-}
-
 header.hero-img {
   top: 80px;
   margin: auto;
@@ -255,26 +251,29 @@ header.hero-img .hero-text h1 {
   font-weight: bold;
 }
 
+.pprv {
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.pprv .prv-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  transition: font-weight, 0.5s;
+}
+.pprv .prv-link:hover {
+  font-weight: bold;
+}
+
 footer {
   position: relative;
-  height: 35px;
+  display: flex;
+  height: 65px;
   font-size: 12px;
   justify-content: center;
   text-align: center;
   background-color: rgb(242, 134, 0);
-}
-footer .prv-link {
-  margin-top: 3px;
-  font-size: 12px;
-  position: absolute;
-  right: 60px;
-  text-decoration: none;
-  color: white;
-  transition: color font-weight, 0.5s;
-}
-footer .prv-link:hover {
-  color: black;
-  font-weight: bold;
 }
 
 .cookies-box {
@@ -323,6 +322,79 @@ footer .prv-link:hover {
 
 .cookies-box.show {
   display: inline;
+}
+
+.title-privacy {
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.title-privacy p {
+  text-transform: uppercase;
+  color: rgb(242, 134, 0);
+  font-weight: bold;
+}
+.title-privacy a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(242, 134, 0);
+}
+
+.privacy {
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+.privacy h2,
+.privacy h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.privacy h3 {
+  font-size: 20px;
+}
+.privacy h4 {
+  font-size: 18px;
+}
+.privacy h4 {
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.privacy table {
+  font-size: 7px;
+}
+.privacy li {
+  margin-top: 0;
+}
+.privacy .item-pv {
+  margin-bottom: 0;
+}
+.privacy .laws li {
+  justify-content: start;
+  text-align: start;
+}
+.privacy .back-home {
+  border-color: black;
+  height: 40px;
+  width: 180px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: color, 0.5s;
+  background-color: white;
+}
+.privacy .back-home a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.privacy .back-home:hover {
+  background-color: rgba(239, 235, 235, 0.748);
+}
+.privacy .back-home:hover a {
+  color: rgb(242, 134, 0);
 }
 
 @media (min-width: 576px) {
@@ -388,6 +460,23 @@ footer .prv-link:hover {
     padding-top: 5px;
     font-size: 15px;
   }
+  .privacy {
+    font-size: 15px;
+  }
+  .privacy .table {
+    font-size: 14px;
+  }
+  .privacy h3 {
+    font-size: 22px;
+  }
+  .privacy h4 {
+    font-size: 20px;
+  }
+  .privacy .back-home {
+    font-size: 15px;
+    height: 50px;
+    width: 210px;
+  }
 }
 @media (min-width: 768px) {
   section {
@@ -443,5 +532,17 @@ footer .prv-link:hover {
   }
   .works p {
     font-size: 13px;
+  }
+  .privacy {
+    font-size: 16px;
+  }
+  .privacy .table {
+    font-size: 15px;
+  }
+  .privacy h3 {
+    font-size: 23px;
+  }
+  .privacy h4 {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=main.css.map */
