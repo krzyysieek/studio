@@ -25,6 +25,7 @@ section {
 	background-color: $second-color;
 }
 
+
 nav {
 	.nav-link {
 		color: $first-color;
@@ -67,65 +68,37 @@ nav {
 	z-index: 1;
 }
 
+.fb-btn {
+	margin-top: 3px;
+	position: fixed;
+	right: 0;
+	border: none;
+	justify-content: center;
+	align-items: center;
+	background-color: $bgc-color;
+	
+
+	i {
+		color: $first-color;
+		font-size: 20px;
+		transition: .5s;
+	}
+
+	i:hover {
+		color: rgb(7, 7, 126);
+		font-size: 30px;
+	}
+	
+}
+
+
 .img-logo {
 	width: 100px;
 }
 
-header.hero-img {
-	top: 80px;
-	margin: auto;
-	height: 60vh;
-	background-image: url('../img/logo2.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: relative;
-	z-index: 0;
-
-	.hero-shadow {
-		position: absolute;
-		background-color: rgba(252, 251, 250, 0.61);
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -3;
-	}
-
-	.hero-text {
-		position: relative;
-		font-family: 'Pacifico', cursive;
-		display: flex;
-		font-weight: bold;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		height: 100%;
-		color: $first-color;
-
-		button.abt-us,
-		a {
-			text-decoration: none;
-			margin-top: 20px;
-			font-size: 17px;
-			padding: 10px;
-			color: $first-color;
-			border-radius: 10px;
-			border-color: rgba(255, 255, 255, 0.6);
-			transition: background-color, color, 0.6s;
-		}
-
-		button.abt-us:hover {
-			background-color: $first-color;
-		}
-
-		a:hover {
-			color: white;
-		}
-
-		h1 {
-			font-size: 23px;
-		}
+header {
+	.container {
+		margin-top: 70px;
 	}
 }
 
@@ -148,7 +121,7 @@ header.hero-img {
 .aboutus {
 	// position: relative;
 	background-color: $bgc-color;
-	margin-top: 180px;
+	margin-top: 60px;
 
 	p {
 		font-size: 20px;
@@ -156,43 +129,6 @@ header.hero-img {
 	}
 }
 
-.team {
-	margin-top: 60px;
-
-	.card {
-		width: auto;
-		margin-top: 20px;
-		height: auto;
-		transition: scale 0.3s;
-		color: white;
-		// font-style: italic;
-		border-radius: 5px;
-
-		.card-img-top {
-			height: auto;
-			object-fit: cover;
-		}
-
-		.card-body {
-			background-color: $first-color;
-			padding: 0px;
-			height: 35px;
-		}
-
-		.card:hover {
-			scale: 0.96;
-		}
-
-		.card-title,
-		.card-text {
-			margin: 5px;
-			padding: 0;
-			text-align: center;
-			font-weight: bold;
-			font-size: 8px;
-		}
-	}
-}
 
 .works {
 	margin-top: 60px;
@@ -464,45 +400,18 @@ footer {
 
 
 @media (min-width: 576px) {
-	header.hero-img {
-		top: 10px;
-		height: 100vh;
-		width: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-
-		.hero-text {
-			h1 {
-				font-size: 30px;
-			}
-
-			button.abt-us {
-				font-size: 20px;
-			}
+	.fb-btn {
+		margin-top: 3px;
+	
+		i {
+			font-size: 40px;
+			transition: .5s;
 		}
-	}
-	.aboutus {
-		margin-top: 100px;
-	}
-	.team {
-		.card {
-			.card-img-top {
-				object-fit: cover;
-			}
-			.card-body {
-				height: 60px;
-
-				.card-title,
-				.card-text {
-					margin: 8px;
-					padding: 0;
-					text-align: center;
-					font-weight: bold;
-					font-size: 15px;
-				}
-			}
+	
+		i:hover {
+			font-size: 55px;
 		}
+		
 	}
 
 	.contact {
@@ -570,50 +479,25 @@ footer {
 		scroll-margin-top: 72px;
 	}
 
-	header.hero-img {
-		top: 90px;
-		// height: 100vh;
-		width: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-
-		.hero-text {
-			h1 {
-				font-size: 30px;
-			}
-
-			button.abt-us {
-				font-size: 20px;
-			}
+	.fb-btn {
+		margin-top: 5px;
+	
+		i {
+			font-size: 40px;
+			transition: .5s;
 		}
+	
+		i:hover {
+			font-size: 55px;
+		}
+		
 	}
 
 	.aboutus {
-		margin-top: 150px;
+		margin-top: 80px;
 
 		p {
 			font-size: 17px;
-		}
-	}
-
-	.team {
-		.card {
-			.card-img-top {
-				object-fit: cover;
-			}
-			.card-body {
-				height: 120px;
-
-				.card-title,
-				.card-text {
-					margin: 8px;
-					padding: 5px;
-					text-align: center;
-					font-weight: bold;
-					font-size: 25px;
-				}
-			}
 		}
 	}
 
