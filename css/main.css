@@ -57,26 +57,6 @@ nav .navbar-collapse {
   z-index: 0;
 }
 
-.fb-btn {
-  display: none;
-  margin-top: 3px;
-  position: fixed;
-  right: 0;
-  border: none;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(252, 251, 250, 0.61);
-}
-.fb-btn i {
-  color: rgb(242, 134, 0);
-  font-size: 20px;
-  transition: 0.5s;
-}
-.fb-btn i:hover {
-  color: rgb(7, 7, 126);
-  font-size: 30px;
-}
-
 .img-logo {
   width: 100px;
 }
@@ -163,7 +143,7 @@ header .container {
 
 .contact {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .contact .contact-us {
   display: flex;
@@ -188,6 +168,23 @@ header .container {
 }
 .contact .contact-us a:hover {
   font-weight: bold;
+}
+.contact .contact-us .fb-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 251, 250, 0.61);
+}
+.contact .contact-us .fb-icon i {
+  color: rgb(242, 134, 0);
+  font-size: 20px;
+  transition: 0.5s;
+}
+.contact .contact-us .fb-icon i:hover {
+  color: rgb(7, 7, 126);
+  font-size: 30px;
 }
 
 .pprv {
@@ -336,16 +333,6 @@ footer {
 }
 
 @media (min-width: 576px) {
-  .fb-btn {
-    margin-top: 3px;
-  }
-  .fb-btn i {
-    font-size: 40px;
-    transition: 0.5s;
-  }
-  .fb-btn i:hover {
-    font-size: 55px;
-  }
   .contact {
     margin-top: 60px;
   }
@@ -370,6 +357,12 @@ footer {
   }
   .contact .contact-us a:hover {
     font-weight: bold;
+  }
+  .contact .contact-us .fb-icon i {
+    font-size: 30px;
+  }
+  .contact .contact-us .fb-icon i:hover {
+    font-size: 40px;
   }
   footer {
     height: 40px;
@@ -398,17 +391,6 @@ footer {
   section {
     scroll-margin-top: 72px;
   }
-  .fb-btn {
-    display: block;
-    margin-top: 5px;
-  }
-  .fb-btn i {
-    font-size: 40px;
-    transition: 0.5s;
-  }
-  .fb-btn i:hover {
-    font-size: 55px;
-  }
   .aboutus {
     margin-top: 80px;
   }
@@ -417,7 +399,6 @@ footer {
   }
   .contact {
     margin-top: 80px;
-    margin-bottom: 20px;
   }
   .contact .contact-us h3 {
     margin: 0;
@@ -428,6 +409,9 @@ footer {
   .contact .contact-us .contact-item {
     margin: 8px;
     font-size: 18px;
+  }
+  .contact .fb-box span {
+    width: 600px;
   }
   .works p {
     font-size: 13px;
