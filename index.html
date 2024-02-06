@@ -21,7 +21,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -47,11 +47,15 @@
 
 		</div>
 	</nav>
-	<button class="fb-btn"><i class="fa-brands fa-facebook"></i></button>
+
+
+
+	<!-- <button class="fb-btn"><i class="fa-brands fa-facebook"></i></button> -->
 	<header>
 		<div class="container"><img src="./img/main-image.jpg" class="img-fluid" alt="zdjęcie studio figura"></div>
 	</header>
 
+	
 	<section id="aboutus" class="aboutus">
 		<div class="underline"></div>
 		<h2 class="section-title">O nas</h2>
@@ -138,11 +142,12 @@
 							<td>Ujędrnianie i uelastycznianie skóry, stymulacja produkcji kolagenu i elastyny,
 								redukcja
 								cellulitu, wymodelowanie sylwetki, uniesienie pośladków, redukcja rozstępów.
-								</td>
+							</td>
 						</tr>
 						<tr>
 							<th scope="row">Lipolaser</th>
-							<td>Wysuszanie komórek tłuszczowych, redukcja tkanki tłuszczowej, redukcja cellulitu, zmniejszenie
+							<td>Wysuszanie komórek tłuszczowych, redukcja tkanki tłuszczowej, redukcja cellulitu,
+								zmniejszenie
 								obwodów ciała.
 							</td>
 						</tr>
@@ -153,7 +158,9 @@
 						</tr>
 						<tr>
 							<th scope="row">Fala Radiowa Multipolarna</th>
-							<td>Ujędrnianie i zagęszczanie skóry, stymulacja produkcji kolagenu i elastyny, likwidacja luźnej skóry, redukcja rozstępów, redukcja cellulitu, uniesienie pośladków, wymodelowanie sylwetki.
+							<td>Ujędrnianie i zagęszczanie skóry, stymulacja produkcji kolagenu i elastyny, likwidacja
+								luźnej skóry, redukcja rozstępów, redukcja cellulitu, uniesienie pośladków,
+								wymodelowanie sylwetki.
 							</td>
 						</tr>
 						<tr>
@@ -192,7 +199,9 @@
 								likwidacja wiotkiej skóry, szyi, twarzy, dekoltu.</td>
 						</tr>
 						<tr>
-							<th scope="row">Infuzja tlenowa <br> <p>+ odpowiednio dobrana ampułka</p></th>
+							<th scope="row">Infuzja tlenowa <br>
+								<p>+ odpowiednio dobrana ampułka</p>
+							</th>
 							<td>Głębokie dotlenienie i odżywienie, poprawa kondycji skóry, poprawa kolorytu, poprawa
 								elastyczności.</td>
 						</tr>
@@ -722,9 +731,14 @@
 						href="mailto:studiofigura.przemysl@interia.pl"> studiofigura.przemysl@interia.pl</a>
 					</mailto>
 				</p>
+				<a href="https://www.facebook.com/people/Studio-Figura-Przemy%C5%9Bl/100092005265613/?ref=embed_page" target="_blank"><button class="fb-icon"><i class="fa-brands fa-facebook"></i></button></a>
+				<div class="fb-box d-flex justify-content-center"><div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100092005265613" data-width="400"
+					data-hide-cover="false" data-show-facepile="false"></div></div>
 				<div class="pprv"><a class="prv-link" href="./privacy.html">Polityka prywatności</a></div>
 			</div>
 		</div>
+		
+
 	</section>
 
 	<footer class="text-light py-2 text-center">
@@ -732,12 +746,18 @@
 	</footer>
 
 	<div class="cookies-box">
-		<p class="cookies-text">W naszym Serwisie używamy plików cookies. Korzystając dalej z Serwisu, wyrażasz zgodę na stosowanie plików cookies zgodnie z <a href="./privacy.html">Polityką prywatności.</a> Wyrażenie zgody jest dobrowolne, w każdej chwili można ją cofnąć poprzez zmianę ustawień dotyczących plików „cookies” w używanej przeglądarce internetowej. Kliknij „Akceptuję”, aby ta informacja nie wyświetlała się więcej.</p>
-		<button class="info-btn"><a href="./privacy.html">Dowiedz się więcej</a></button><button class="accept-btn">Akceptuję</button>
+		<p class="cookies-text">W naszym Serwisie używamy plików cookies. Korzystając dalej z Serwisu, wyrażasz zgodę na
+			stosowanie plików cookies zgodnie z <a href="./privacy.html">Polityką prywatności.</a> Wyrażenie zgody jest
+			dobrowolne, w każdej chwili można ją cofnąć poprzez zmianę ustawień dotyczących plików „cookies” w używanej
+			przeglądarce internetowej. Kliknij „Akceptuję”, aby ta informacja nie wyświetlała się więcej.</p>
+		<button class="info-btn"><a href="./privacy.html">Dowiedz się więcej</a></button><button
+			class="accept-btn">Akceptuję</button>
 	</div>
 
 
-
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v19.0"
+		nonce="0nU80OkH"></script>
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

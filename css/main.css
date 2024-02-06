@@ -58,6 +58,7 @@ nav .navbar-collapse {
 }
 
 .fb-btn {
+  display: none;
   margin-top: 3px;
   position: fixed;
   right: 0;
@@ -207,7 +208,6 @@ header .container {
 footer {
   position: relative;
   display: flex;
-  height: 65px;
   font-size: 12px;
   justify-content: center;
   text-align: center;
@@ -399,6 +399,7 @@ footer {
     scroll-margin-top: 72px;
   }
   .fb-btn {
+    display: block;
     margin-top: 5px;
   }
   .fb-btn i {

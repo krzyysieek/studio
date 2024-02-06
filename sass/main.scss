@@ -25,7 +25,6 @@ section {
 	background-color: $second-color;
 }
 
-
 nav {
 	.nav-link {
 		color: $first-color;
@@ -68,29 +67,27 @@ nav {
 	z-index: 1;
 }
 
-.fb-btn {
-	margin-top: 3px;
-	position: fixed;
-	right: 0;
-	border: none;
-	justify-content: center;
-	align-items: center;
-	background-color: $bgc-color;
-	
+// .fb-btn {
+// 	display: none;
+// 	margin-top: 3px;
+// 	position: fixed;
+// 	right: 0;
+// 	border: none;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background-color: $bgc-color;
 
-	i {
-		color: $first-color;
-		font-size: 20px;
-		transition: .5s;
-	}
+// 	i {
+// 		color: $first-color;
+// 		font-size: 20px;
+// 		transition: 0.5s;
+// 	}
 
-	i:hover {
-		color: rgb(7, 7, 126);
-		font-size: 30px;
-	}
-	
-}
-
+// 	i:hover {
+// 		color: rgb(7, 7, 126);
+// 		font-size: 30px;
+// 	}
+// }
 
 .img-logo {
 	width: 100px;
@@ -128,7 +125,6 @@ header {
 		margin: 20px;
 	}
 }
-
 
 .works {
 	margin-top: 60px;
@@ -191,7 +187,7 @@ header {
 
 .contact {
 	margin-top: 60px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 	.contact-us {
 		display: flex;
@@ -220,36 +216,54 @@ header {
 		a:hover {
 			font-weight: bold;
 		}
+
+		.fb-icon {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border: none;
+			justify-content: center;
+			align-items: center;
+			background-color: $bgc-color;
+	
+			i {
+				color: $first-color;
+				font-size: 20px;
+				transition: 0.5s;
+			}
+		
+			i:hover {
+				color: rgb(7, 7, 126);
+				font-size: 30px;
+			}
+		}
 	}
+
+	
 }
 
 .pprv {
 	margin: 20px;
 	text-align: center;
 	justify-content: center;
-.prv-link {
-	font-size: 15px;
-	text-decoration: none;
-	color: black;
-	transition: font-weight, 0.5s;
-}
+	.prv-link {
+		font-size: 15px;
+		text-decoration: none;
+		color: black;
+		transition: font-weight, 0.5s;
+	}
 
-.prv-link:hover {
-	font-weight: bold;
-}
-
+	.prv-link:hover {
+		font-weight: bold;
+	}
 }
 
 footer {
 	position: relative;
 	display: flex;
-	height: 65px;
 	font-size: 12px;
 	justify-content: center;
 	text-align: center;
 	background-color: $first-color;
-
-
 }
 
 .cookies-box {
@@ -303,7 +317,7 @@ footer {
 	}
 }
 
-.cookies-box.show{
+.cookies-box.show {
 	display: inline;
 }
 
@@ -326,8 +340,6 @@ footer {
 		color: $first-color;
 	}
 }
-
-
 
 .privacy {
 	justify-content: center;
@@ -376,7 +388,7 @@ footer {
 		border-color: black;
 		height: 40px;
 		width: 180px;
-        font-size: 12px;
+		font-size: 12px;
 		border-radius: 10px;
 		margin-bottom: 10px;
 		transition: color, 0.5s;
@@ -389,30 +401,28 @@ footer {
 		}
 	}
 
-    .back-home:hover {
-        background-color: rgba(239, 235, 235, 0.748);
-    
-        a {
-            color: $first-color;
-        }
-    }
+	.back-home:hover {
+		background-color: rgba(239, 235, 235, 0.748);
+
+		a {
+			color: $first-color;
+		}
+	}
 }
 
-
 @media (min-width: 576px) {
-	.fb-btn {
-		margin-top: 3px;
-	
-		i {
-			font-size: 40px;
-			transition: .5s;
-		}
-	
-		i:hover {
-			font-size: 55px;
-		}
-		
-	}
+	// .fb-btn {
+	// 	margin-top: 3px;
+
+	// 	i {
+	// 		font-size: 40px;
+	// 		transition: 0.5s;
+	// 	}
+
+	// 	i:hover {
+	// 		font-size: 55px;
+	// 	}
+	// }
 
 	.contact {
 		margin-top: 60px;
@@ -442,7 +452,20 @@ footer {
 			a:hover {
 				font-weight: bold;
 			}
+
+			.fb-icon {
+	
+				i {
+					font-size: 30px;
+				}
+			
+				i:hover {
+					font-size: 40px;
+				}
+			}
 		}
+
+		
 	}
 
 	footer {
@@ -467,7 +490,7 @@ footer {
 		}
 
 		.back-home {
-            font-size: 15px;
+			font-size: 15px;
 			height: 50px;
 			width: 210px;
 		}
@@ -479,19 +502,19 @@ footer {
 		scroll-margin-top: 72px;
 	}
 
-	.fb-btn {
-		margin-top: 5px;
-	
-		i {
-			font-size: 40px;
-			transition: .5s;
-		}
-	
-		i:hover {
-			font-size: 55px;
-		}
-		
-	}
+	// .fb-btn {
+	// 	display: block;
+	// 	margin-top: 5px;
+
+	// 	i {
+	// 		font-size: 40px;
+	// 		transition: 0.5s;
+	// 	}
+
+	// 	i:hover {
+	// 		font-size: 55px;
+	// 	}
+	// }
 
 	.aboutus {
 		margin-top: 80px;
@@ -503,7 +526,6 @@ footer {
 
 	.contact {
 		margin-top: 80px;
-		margin-bottom: 20px;
 
 		.contact-us {
 			h3 {
@@ -516,6 +538,12 @@ footer {
 			.contact-item {
 				margin: 8px;
 				font-size: 18px;
+			}
+		}
+
+		.fb-box {
+			span {
+				width: 600px;
 			}
 		}
 	}
